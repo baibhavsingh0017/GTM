@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-box {
+      background: #1a1a40;
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .btn {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      background: #7b5cff;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #a78bfa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>Enter Details</h2>
+
+    <form action="thankyou.html" method="GET">
+      
+      <input type="text" name="name" placeholder="Full Name" required>
+
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+
+      <select name="payment" required>
+        <option value="">Select Payment Method</option>
+        <option>UPI</option>
+        <option>Credit Card</option>
+        <option>Debit Card</option>
+        <option>Cash on Delivery</option>
+      </select>
+
+      <button type="submit" class="btn">PLACE ORDER</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
