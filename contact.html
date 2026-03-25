@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Complete Your Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Enter Your Details</h1>
+
+<form id="leadForm">
+  <input type="text" placeholder="Full Name" required>
+  <input type="email" placeholder="Email" required>
+  <input type="tel" placeholder="Phone Number" required>
+
+  <select id="plan">
+    <option>Individual Plan</option>
+    <option>Business Plan</option>
+  </select>
+
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+document.getElementById("leadForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  window.location.href = "thankyou.html";
+});
+</script>
+
+</body>
+</html>
